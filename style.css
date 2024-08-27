@@ -1,0 +1,238 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter';
+}
+body{
+    height: auto;
+    width: auto;
+    background-color: #F3F5FC;
+}
+main{
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+.cuadrado{
+    height: 394px;
+    width: 680px;
+}
+.header{
+    display: block;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.texto{
+    height: 100%;
+    width: 100%;
+    margin-left: 100px;
+    color: #0A3871;
+}
+.texto textarea{
+    background-color: transparent;
+    border: none;
+    height: 100%;
+    width: 100%;
+    resize: none;
+    font-size: 32px;
+    color: #0A3871;
+}
+
+textarea::placeholder{
+    color: #0A3871;
+}
+textarea:focus, input:focus{
+    outline: none;
+    color: #0A3871;
+}
+.aviso{
+    font-size: 12px;
+    margin-left: 120px;
+}
+
+.botones{
+    width: 680px;
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 100px;
+}
+.boton_uno{
+    height: 67px;
+    width: 328px;
+    font-size: 16px;
+    color: #F3F5FC;
+    background-color:#0A3871;
+    border-radius: 24px;
+    border: none;
+}
+.boton_dos{
+    height: 67px;
+    width: 328px;
+    font-size: 16px;
+    color: #0A3871;
+    background: #D8DFE8;
+    border-radius: 24px;
+    border:2px solid;
+    border-color: #0A3871;
+}
+.rectangle{
+    height: 564px;
+    width: 400px;
+    padding: 32px;
+    margin-top: 40px;
+    margin-right: 20px;
+    background-color: #ffffff;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 32px;
+}
+.muñeco{
+    display: flex;
+    justify-content: center;
+}
+
+.negrita{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 32px;
+    width: 336px;
+    font-size: 24px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.mensaje{
+    width: 336px;
+    /*height: 410px;*/
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 16px;
+    font-size: 16px;
+    font-weight: 100;
+    text-align: center;
+    color: #0A3871;
+    word-wrap: break-word;
+}
+
+.boton_copiar{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#copiar{  
+    height: 67px;
+    width: 328px;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #0A3871;
+    background-color: transparent;
+    border-radius: 24px;
+    border:2px solid;
+    border-color: #0A3871;
+    visibility: hidden;
+}
+
+@media (max-width: 1200px) {
+
+    main{
+        flex-direction: column;
+    }
+    .header{
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .cuadrado{
+        height: 960px;
+        width: auto;
+        margin-right: 30px;
+        flex-direction: column;
+        
+    }
+    .texto{
+        height: 80%;
+        width: 84%;
+        margin-right: 10px;
+    }
+    .botones{
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+    }
+
+    .boton_uno{
+        height: 40px;
+        width: 48%;
+    }
+
+    .boton_dos{
+        height: 40px;
+        width: 48%;
+    }
+    .rectangle{
+        flex-direction: column;
+        height: 150px;
+        padding: 10px;
+        width: 80%;
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .muñeco{
+        display: none;
+    }
+    .negrita{
+        margin-top: 15px;
+    }
+    .mensaje{
+        height: 5px;
+        width: 90%;
+    }
+    .boton_copiar{
+        visibility: hidden;
+    }
+}
+
+@media (max-width: 400px){
+
+    .cuadrado{
+        margin-left: 10px;
+    }
+    .texto{
+        margin-left: 10px;
+    }
+    .aviso{
+        margin-left: 30px;
+    }
+    .botones{
+        flex-direction: column;
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .boton_uno{
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+    }
+    .boton_dos{
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+    }
+    .rectangle{
+        height: 150px;
+        margin-top: 30px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    #ningun{
+        width: 70%;
+        height: auto;
+        word-wrap: break-word;
+    }
+}
